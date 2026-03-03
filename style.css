@@ -24,3 +24,16 @@
     }
 }
 
+.wp-block-foozeo-faq-accordion {
+    counter-reset: faq-item;
+
+
+    .wp-block-accordion-item {
+        counter-increment: faq-item;
+
+        .wp-block-accordion-heading__toggle-title::before {
+            content: counter(faq-item) ". ";
+        }
+    }
+}
+

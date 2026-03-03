@@ -17,7 +17,10 @@ import { useBlockProps, InnerBlocks } from '@wordpress/block-editor';
  */
 export default function save() {
 	return (
-		<div { ...useBlockProps.save() }>
+		<div { ...useBlockProps.save( {
+			'data-wp-interactive': 'core/accordion',
+			'data-wp-context': JSON.stringify( { autoclose: false, accordionItems: [] } ),
+		} ) }>
 			<InnerBlocks.Content />
 		</div>
 	);
