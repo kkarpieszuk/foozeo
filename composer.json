@@ -12,5 +12,13 @@
             "email": "kkarpieszuk@gmail.com"
         }
     ],
-    "require": {}
+    "require": {},
+    "scripts": {
+        "post-install-cmd": [
+            "cd blocks/faq-accordion && npm install && npm run build"
+        ],
+        "post-update-cmd": [
+            "cd blocks/faq-accordion && npm install && npm run build"
+        ]
+    }
 }
