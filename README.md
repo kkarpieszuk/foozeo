@@ -1,8 +1,6 @@
-![Foozeo Theme](screenshot.webp)
-
 # Foozeo Theme
 
-Foozeo is a WordPress theme for the Foozeo website.
+Foozeo is a WordPress theme.
 
 ## Features
 
@@ -26,3 +24,5 @@ Foozeo is a WordPress theme for the Foozeo website.
 2. Download the latest release
 3. Upload the theme to your WordPress installation
 4. Go to WordPress admin panel and activate the theme
+
+![Foozeo Theme](screenshot.webp)
