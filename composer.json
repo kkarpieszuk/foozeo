@@ -19,6 +19,10 @@
         ],
         "post-update-cmd": [
             "cd blocks/faq-accordion && npm install && npm run build"
+        ],
+        "build": [
+            "composer install",
+            "cd blocks/faq-accordion && rm -rf node_modules"
         ]
     }
 }
