@@ -1,1 +1,1 @@
-hej
+![Foozeo Theme](screenshot.webp)
