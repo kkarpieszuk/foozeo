@@ -15,6 +15,7 @@ function get_latest_books() {
         data: {
             action: 'get_latest_books',
             current_page: foozeo_ajax_object.current_page,
+            nonce: foozeo_ajax_object.nonce,
         },
         success: function(response) {
 
