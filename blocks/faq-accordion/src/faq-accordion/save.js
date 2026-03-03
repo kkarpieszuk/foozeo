@@ -15,12 +15,15 @@ import { useBlockProps, InnerBlocks } from '@wordpress/block-editor';
  *
  * @return {Element} Element to render.
  */
-export default function save() {
+export default function save( { attributes } ) {
+	const title = attributes.title || '';
+
 	return (
 		<div { ...useBlockProps.save( {
 			'data-wp-interactive': 'core/accordion',
 			'data-wp-context': JSON.stringify( { autoclose: false, accordionItems: [] } ),
 		} ) }>
+			<h2 className='wp-block-faq-accordion-title'>{ title }</h2>
 			<InnerBlocks.Content />
 		</div>
 	);

@@ -16,6 +16,12 @@ return array(
 		'supports' => array(
 			'html' => false
 		),
+		'attributes' => array(
+			'title' => array(
+				'type' => 'string',
+				'default' => 'FAQ'
+			)
+		),
 		'textdomain' => 'faq-accordion',
 		'editorScript' => 'file:./index.js',
 		'editorStyle' => 'file:./index.css',

@@ -11,6 +11,12 @@
 	"supports": {
 		"html": false
 	},
+	"attributes": {
+		"title": {
+			"type": "string",
+			"default": "FAQ"
+		}
+	},
 	"textdomain": "faq-accordion",
 	"editorScript": "file:./index.js",
 	"editorStyle": "file:./index.css",

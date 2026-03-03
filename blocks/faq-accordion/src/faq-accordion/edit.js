@@ -11,7 +11,9 @@ import { __ } from '@wordpress/i18n';
  *
  * @see https://developer.wordpress.org/block-editor/reference-guides/packages/packages-block-editor/#useblockprops
  */
-import { useBlockProps, InnerBlocks } from '@wordpress/block-editor';
+import { useBlockProps, InnerBlocks, InspectorControls } from '@wordpress/block-editor';
+
+import { PanelBody, TextControl } from '@wordpress/components';
 
 /**
  * Lets webpack process CSS, SASS or SCSS files referenced in JavaScript files.
@@ -29,14 +31,28 @@ import './editor.scss';
  *
  * @return {Element} Element to render.
  */
-export default function Edit() {
+export default function Edit( { attributes, setAttributes } ) {
+
 	return (
-		<div { ...useBlockProps() }>
-			<InnerBlocks
-				allowedBlocks={ [ 'core/accordion-item' ] }
-				orientation='vertical'
-				renderAppender={ InnerBlocks.ButtonBlockAppender }
-			/>
-		</div>
+		<>
+			<InspectorControls>
+				<PanelBody title={ __('Settings', 'faq-accordion') }>
+					<TextControl
+						label={ __('Title', 'faq-accordion') }
+						value={ attributes.title || '' }
+						onChange={ ( value ) => setAttributes( { title: value } ) }
+					/>
+				</PanelBody>
+			</InspectorControls>
+			<div { ...useBlockProps() }>
+				<h2 className='wp-block-faq-accordion-title'>{ attributes.title || '' }</h2>
+				<InnerBlocks
+					allowedBlocks={ [ 'core/accordion-item' ] }
+					orientation='vertical'
+					renderAppender={ InnerBlocks.ButtonBlockAppender }
+				/>
+			</div>
+		</>
+
 	);
 }
