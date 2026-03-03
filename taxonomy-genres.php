@@ -14,15 +14,15 @@
 
             wp_reset_postdata();
             ?>
+        </div>
 
-            <div class="pagination">
-                <?php
-                the_posts_pagination( [
-                    'prev_text' => __( 'Previous', 'foozeo' ),
-                    'next_text' => __( 'Next', 'foozeo' ),
-                ] );
-                ?>
-            </div>
+        <div class="pagination">
+            <?php
+            the_posts_pagination( [
+                'prev_text' => __( 'Previous', 'foozeo' ),
+                'next_text' => __( 'Next', 'foozeo' ),
+            ] );
+            ?>
         </div>
     </section>
 </main>
