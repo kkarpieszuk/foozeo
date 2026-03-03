@@ -3,7 +3,7 @@
         'name' => 'konrad/foozeo',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => '76061258c7ed6b1365e6890900412e2b2b7e545b',
+        'reference' => '0c36ebbbd36dcf043949817f577fa970ec98e890',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -13,7 +13,7 @@
         'konrad/foozeo' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => '76061258c7ed6b1365e6890900412e2b2b7e545b',
+            'reference' => '0c36ebbbd36dcf043949817f577fa970ec98e890',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

@@ -22,7 +22,8 @@
         ],
         "build": [
             "composer install",
-            "cd blocks/faq-accordion && rm -rf node_modules"
+            "cd blocks/faq-accordion && rm -rf node_modules",
+            "zip -r foozeo-theme.zip . -x '*.git*' '*.DS_Store*' '*.zip*' 'node_modules/*'"
         ]
     }
 }
