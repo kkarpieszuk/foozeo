@@ -6,10 +6,13 @@ use Konrad\Foozeo\Faq;
 
 require_once get_stylesheet_directory() . '/vendor/autoload.php';
 
+add_filter( 'deprecated_file_trigger_error', '__return_false' );
+
 ( new Ajax() )->init();
 ( new Assets() )->init();
 ( new PostTypes() )->init();
 ( new Faq() )->init();
+
 
 function the_book_cover( $post_id ) {
     $url = get_the_post_thumbnail_url($post_id);

@@ -1,5 +1,4 @@
 <?php get_header(); ?>
-
 <main>
     <h1><?php single_term_title(); ?></h1>
 
@@ -26,5 +25,4 @@
         </div>
     </section>
 </main>
-
 <?php get_footer(); ?>

@@ -24,6 +24,9 @@ class Faq {
         }, 10, 2 );
     }
 
+    /**
+     * Adds the same data attributes to the block as core/accordion block does so it starts to be interactive.
+     */
     public static function render_faq_accordion( $attributes, $content ) {
         if ( ! $content ) {
             return $content;

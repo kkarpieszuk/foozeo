@@ -1,6 +1,4 @@
 <?php get_header(); ?>
-
-
 <main>
     <h1><?php the_title(); ?></h1>
 
@@ -10,7 +8,6 @@
         <p><?php echo get_the_date( 'F j, Y' ); ?></p>
     </section>
 
-    <!-- genres -->
     <section id="genres">
         <p>
             <?php the_terms( $post->ID, 'genres', __( 'Genres: ', 'foozeo' ) ); ?>
@@ -22,10 +19,8 @@
     </section>
 
     <section id="latest-books">
-        <h2><?php _e( 'Latest Books', 'foozeo' ); ?></h2>
+        <h2><?php esc_html_e( 'Latest Books', 'foozeo' ); ?></h2>
         <div class="latest-books-container"></div>
     </section>
 </main>
-
-
 <?php get_footer(); ?>

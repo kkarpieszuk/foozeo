@@ -47,7 +47,7 @@ class Ajax {
                 'title' => sanitize_text_field($book->post_title),
                 'publication_date' => date('F j, Y', strtotime($book->post_date)),
                 'genres' => implode(', ', wp_list_pluck(get_the_terms($book->ID, 'genres'), 'name')),
-                'excerpt' => $book->post_excerpt !== '' ? sanitize_text_field($book->post_excerpt) : __( 'No excerpt available', 'foozeo' ),
+                'excerpt' => $book->post_excerpt !== '' ? sanitize_text_field($book->post_excerpt) : esc_html__( 'No excerpt available', 'foozeo' ),
                 'link' => get_permalink($book->ID),
             ];
         }, $latest_books);
