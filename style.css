@@ -2,3 +2,18 @@
  * Theme Name: Foozeo
  * Template: twentytwentyfive
  **/
+
+ @keyframes page-up {
+    from {
+        transform: translateY(50%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+ }
+
+ body {
+    animation: page-up 1s ease-in-out;
+ }
