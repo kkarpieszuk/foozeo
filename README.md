@@ -26,3 +26,4 @@ Foozeo is a WordPress theme.
 4. Go to WordPress admin panel and activate the theme
 
 ![Foozeo Theme](screenshot.webp)
+Yup, that's me.
