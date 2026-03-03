@@ -1,0 +1,1 @@
+console.log('→→ Konrad Karpieszuk ←← remember this name.');
