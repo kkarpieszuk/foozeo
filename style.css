@@ -3,7 +3,7 @@
  * Template: twentytwentyfive
  **/
 
-.single-books {
+.single-books, .tax-genres {
     main {
         max-width: 1200px;
         margin: 0 auto;

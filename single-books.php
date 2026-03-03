@@ -12,7 +12,9 @@
 
     <!-- genres -->
     <section id="genres">
-        <p><?php the_terms( $post->ID, 'genres', __( 'Genres: ', 'foozeo' ) ); ?></p>
+        <p>
+            <?php the_terms( $post->ID, 'genres', __( 'Genres: ', 'foozeo' ) ); ?>
+        </p>
     </section>
 
     <section id="content">

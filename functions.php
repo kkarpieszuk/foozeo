@@ -97,6 +97,17 @@ register_taxonomy('genres', 'books', [
     'hierarchical' => true,
 ]);
 
+add_action('pre_get_posts', 'foozeo_pre_get_posts');
+function foozeo_pre_get_posts( $query ) {
+    if ( is_admin() || ! $query->is_main_query() ) {
+        return;
+    }
+
+    if ( is_tax('genres') ) {
+        $query->set('posts_per_page', 5);
+    }
+}
+
 function the_book_cover( $post_id ) {
     $url = get_the_post_thumbnail_url($post_id);
 
