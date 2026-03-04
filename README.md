@@ -2,6 +2,8 @@
 
 Foozeo is a WordPress theme.
 
+See [TASK.md](TASK.md) for task execution details.
+
 ## Features
 
 - Child theme of Twenty Twenty-Five
