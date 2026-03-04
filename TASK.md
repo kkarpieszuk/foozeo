@@ -4,9 +4,9 @@ Podczas pracy nad zadaniem musiałem iść na kompromisy, dlatego będę bardzo 
 
 # Wykorzystanie AI
 
-Podczas racy nad zadaniem nie korzystałem z agentów AI w trybie generowania kodu. Jedyne wykorzystanie AI to:
+Podczas pracy nad zadaniem nie korzystałem z agentów AI w trybie generowania kodu. Jedyne wykorzystanie AI to:
 - sporadyczne korzystanie z code completion podczas pisania kodu ręcznie do wypełnienia maksykmalnie 3-4 linii  kodu lub dokończenia bieżącej linii (uważam, że niewiele to się różni od pisania kodu w trybie manualnym z podpowiedziami w IDE)
-- w cursor pracowałem czasem w trybie Ask (żaden kod nie jest generowany, można zadawać pytania o rozwiązania, AI odpowiada z propozycjami rożnych podejść do problemu), sczzególnie przy zadaniu odnośnie utworzenia bloku Gutenberga
+- w Cursor pracowałem czasem w trybie Ask (żaden kod nie jest generowany, można zadawać pytania o rozwiązania, AI odpowiada z propozycjami rożnych podejść do problemu), szczególnie przy zadaniu odnośnie utworzenia bloku Gutenberga
 
 # Szczegóły zadań
 
